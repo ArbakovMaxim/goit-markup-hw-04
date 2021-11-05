@@ -307,6 +307,17 @@ ul[class] {
   border-radius: 0px 0px 4px 4px;
 }
 
+/* .social-link {
+  display: flex;
+}
+
+.social-link-svg {
+  width: 100px;
+  height: 100px;
+  fill: red;
+  background-color: var(--color-fons);
+} */
+
 /*кнопки*/
 
 .button {
@@ -397,39 +408,6 @@ ul[class] {
 .footer-link:hover {
   color: var(--accent-color);
 }
-
-/* .footer-social-link::after {
-  display: block;
-  content: "";
-  height: 44px;
-  width: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.footer-social-link::after:hover,
-.footer-social-link::after:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-social-link-instagram::after {
-  background-image: url(../images/instagram.svg);
-}
-
-.footer-social-link-twitter::after {
-  background-image: url(../images/twitter.svg);
-}
-
-.footer-social-link-facebook::after {
-  background-image: url(../images/facebook.svg);
-}
-
-.footer-social-link-linkedin::after {
-  background-image: url(../images/linkedin.svg);
-} */
 
 .address {
   font-style: normal;
