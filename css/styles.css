@@ -106,7 +106,7 @@ ul[class] {
 }
 
 .nav {
-  margin-right: 331px;
+  margin-right: 303px;
 }
 
 .header-nav {
@@ -115,13 +115,13 @@ ul[class] {
 }
 
 .list .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .header-li:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .link.portfolio {
@@ -147,10 +147,19 @@ ul[class] {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
+.header-svg:hover,
+.header-svg:focus,
 .header-contact .link:hover,
 .header-contact .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.header-svg {
+  width: 16px;
+  height: 12px;
+  fill: var(--primer-text-color);
+  margin-right: 10px;
 }
 
 /*герой*/
@@ -276,7 +285,6 @@ ul[class] {
 
 .team-text {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .team-name {
@@ -296,6 +304,41 @@ ul[class] {
   margin-top: 10px;
 }
 
+.social-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-svg:hover,
+.social-svg:focus {
+  fill: var(--color-white);
+}
+
+.social-li {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-block {
+  margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 10px;
+}
+
+.social-li:hover,
+.social-li:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section.team {
   background-color: var(--primary-bg-color);
 }
@@ -306,17 +349,6 @@ ul[class] {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-/* .social-link {
-  display: flex;
-}
-
-.social-link-svg {
-  width: 100px;
-  height: 100px;
-  fill: red;
-  background-color: var(--color-fons);
-} */
 
 /*кнопки*/
 
