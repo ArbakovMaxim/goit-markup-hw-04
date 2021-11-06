@@ -161,8 +161,6 @@ ul[class] {
   align-items: center;
 }
 
-.header-svg:hover,
-.header-svg:focus,
 .header-contact .link:hover,
 .header-contact .link:focus {
   color: var(--accent-color);
@@ -172,8 +170,12 @@ ul[class] {
 .header-svg {
   width: 16px;
   height: 12px;
-  fill: var(--primer-text-color);
+  --icon-color: currentColor;
   margin-right: 10px;
+}
+
+.header-mail {
+  fill: var(--primer-text-color);
 }
 
 /*---------------герой---------------*/
@@ -313,12 +315,7 @@ ul[class] {
 .social-svg {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
-}
-
-.social-svg:hover,
-.social-svg:focus {
-  fill: var(--color-white);
+  --icon-color: currentColor;
 }
 
 .social-link {
@@ -327,6 +324,14 @@ ul[class] {
   justify-content: center;
   height: 44px;
   width: 44px;
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: var(--color-white);
 }
 
 .social-li {
@@ -341,11 +346,6 @@ ul[class] {
   margin-left: 32px;
   margin-right: 32px;
   margin-top: 10px;
-}
-
-.social-li:hover,
-.social-li:focus {
-  background-color: var(--accent-color);
 }
 
 .social-list {
@@ -383,8 +383,6 @@ ul[class] {
 
 .clients-li {
   display: block;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .clients-link {
@@ -394,11 +392,14 @@ ul[class] {
   width: 170px;
   height: 92px;
   fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
-.icon-clients:hover,
-.icon-clients:focus {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .icon-clients {
@@ -546,12 +547,13 @@ ul[class] {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
 }
 
-.footer-social:hover,
-.footer-social:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
