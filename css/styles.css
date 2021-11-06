@@ -115,7 +115,7 @@ ul[class] {
 }
 
 .nav {
-  margin-right: 303px;
+  margin-right: 300px;
 }
 
 .header-nav {
@@ -130,6 +130,10 @@ ul[class] {
 }
 
 .header-li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-mail {
   margin-right: 30px;
 }
 
@@ -156,6 +160,7 @@ ul[class] {
   text-decoration: none;
   align-items: center;
 }
+
 .header-svg:hover,
 .header-svg:focus,
 .header-contact .link:hover,
@@ -530,7 +535,7 @@ ul[class] {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--primer-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social:nth-child(-n + 3) {
